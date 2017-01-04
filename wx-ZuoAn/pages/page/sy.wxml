@@ -1,0 +1,24 @@
+<!--sy.wxml-->
+<view class="container" style="height: 100%;">
+	
+  	
+  	<view class="listStyle">
+  		<view class="nav">
+  			<view class="{{current == 0 ? 'active' : ''}}" catchtap="switchSlider" data-index="0">欧式风格</view>
+  			<view class="{{current == 1 ? 'active' : ''}}" catchtap="switchSlider" data-index="1">日式风格</view>
+  			<view class="{{current == 2 ? 'active' : ''}}" catchtap="switchSlider" data-index="2">韩式风格</view>
+  		</view>
+  		<swiper class="swiper" current="{{current}}" indicator-dots="{{!indicatorDots}}" bindchange="changeSlider">
+			<block wx:for="{{listStyle}}">
+				<swiper-item>
+					<image style="width:100%;height:100%;"  mode="aspectFill" src="{{item.url}}"/>
+					<view class="info">
+						<view class="bg"></view>
+						<view>Style：{{item.name}}</view>
+						<view>Date：{{item.date}}</view>
+					</view>
+				</swiper-item>
+			</block>
+		</swiper>
+  	</view>
+</view>

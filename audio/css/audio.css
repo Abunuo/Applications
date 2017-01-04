@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+.container {
+  width: 1280px;
+  height: 765px;
+  margin: 50px auto;
+  background: -webkit-linear-gradient(left, #5521b8, #bc24b7);
+  position: relative; }
+
+.headImg {
+  position: absolute;
+  width: 385px;
+  height: 385px;
+  top: 110px;
+  left: 150px;
+  background: #000 url(../img/pan.png) no-repeat center center;
+  border-radius: 50%;
+  transform-origin: center;
+  animation-timing-function: linear;
+  box-shadow: 0 0 24px #333;
+  cursor: pointer; }
+
+@keyframes xuanzhuan {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+.stick {
+  width: 77px;
+  height: 229px;
+  position: absolute;
+  top: 110px;
+  left: 525px;
+  background: url(../img/cd_tou.png);
+  transform-origin: 57px 22px;
+  transform: rotate(-8deg); }
+
+.musicList {
+  position: absolute;
+  bottom: 95px;
+  left: 265px; }
+  .musicList li {
+    float: left;
+    width: 172px;
+    height: 86px;
+    background: url(../img/nav_bg.png);
+    margin-right: 22px;
+    border-radius: 8px;
+    text-align: center;
+    color: #eee;
+    font-weight: bold;
+    cursor: pointer; }
+    .musicList li h2 {
+      margin: 18px 0 6px;
+      line-height: 28px; }
+    .musicList li p {
+      font-size: 16px;
+      line-height: 16px; }
+      .musicList li p span {
+        margin-left: 4px;
+        font-size: 12px; }
+
+.musicControl {
+  width: 405px;
+  position: absolute;
+  top: 195px;
+  right: 160px; }
+  .musicControl .musicInfo {
+    color: #fff;
+    margin-bottom: 50px;
+    text-align: center; }
+    .musicControl .musicInfo h1 {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 22px; }
+    .musicControl .musicInfo h2 {
+      font-size: 28px;
+      line-height: 28px; }
+      .musicControl .musicInfo h2 span {
+        margin-left: 10px;
+        font-size: 20px; }
+  .musicControl .control {
+    width: 100%;
+    height: 29px;
+    margin-bottom: 10px; }
+    .musicControl .control .left {
+      float: left;
+      padding: 4px 0; }
+      .musicControl .control .left span {
+        display: block;
+        float: left;
+        height: 21px;
+        width: 30px;
+        margin-right: 22px;
+        cursor: pointer; }
+      .musicControl .control .left span:nth-of-type(1) {
+        background: url(../img/pre.png); }
+      .musicControl .control .left span:nth-of-type(2) {
+        width: 21px;
+        background-image: url(../img/pause.png);
+        background-size: 20px; }
+      .musicControl .control .left span:nth-of-type(3) {
+        background: url(../img/next.png); }
+    .musicControl .control .right {
+      float: right;
+      padding: 5px 0;
+      position: relative; }
+      .musicControl .control .right span {
+        display: block;
+        float: left;
+        height: 19px;
+        margin-right: 22px;
+        cursor: pointer; }
+      .musicControl .control .right span:nth-of-type(1) {
+        width: 21px;
+        background: url(../img/sj.png); }
+      .musicControl .control .right span:nth-of-type(2) {
+        width: 19px;
+        background: url(../img/xh.png); }
+      .musicControl .control .right span:nth-of-type(3) {
+        width: 14px;
+        background-image: url(../img/sound.png);
+        background-size: 14px 19px; }
+      .musicControl .control .right .changeSound {
+        width: 8px;
+        height: 100px;
+        position: absolute;
+        top: -106px;
+        left: 72%;
+        border-radius: 7px;
+        display: none;
+        background: #BCE8F1; }
+        .musicControl .control .right .changeSound .cs {
+          width: 100%;
+          height: 80px;
+          background: #fff;
+          border-radius: 7px; }
+        .musicControl .control .right .changeSound .yl {
+          position: absolute;
+          right: -24px;
+          top: 6px;
+          width: 20px;
+          line-height: 18px;
+          font-size: 18px;
+          color: #fff; }
+  .musicControl .timer {
+    width: 100%;
+    height: 13px;
+    font-weight: bold; }
+    .musicControl .timer .left {
+      float: left;
+      margin-right: 15px;
+      color: #eee;
+      font-size: 12px; }
+      .musicControl .timer .left span {
+        padding-right: 5px; }
+    .musicControl .timer .right {
+      float: left;
+      width: 300px;
+      height: 8px;
+      margin-top: 3px;
+      border-radius: 4px;
+      background: #666;
+      overflow: hidden; }
+      .musicControl .timer .right .time {
+        width: 0;
+        height: 100%;
+        background: #fff; }
+
+/*# sourceMappingURL=audio.css.map */

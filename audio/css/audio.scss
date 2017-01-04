@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 1280px;
+    height: 765px;
+    margin: 50px auto;
+    background: -webkit-linear-gradient(left,#5521b8,#bc24b7);
+    position: relative;
+}
+.headImg{
+    position: absolute;
+    width: 385px;
+    height: 385px;
+    top: 110px;
+    left: 150px;
+    background: #000 url(../img/pan.png)no-repeat center center;
+    border-radius: 50%;
+    transform-origin: center;
+    animation-timing-function: linear;
+    //animation: xuanzhuan 8s linear infinite;
+    box-shadow: 0 0 24px #333;
+    cursor: pointer;
+}
+@keyframes xuanzhuan{
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
+.stick{
+    width: 77px;
+    height: 229px;
+    position: absolute;
+    top: 110px;
+    left: 525px;
+    background: url(../img/cd_tou.png);
+    transform-origin: 57px 22px;
+    transform: rotate(-8deg);
+}
+.musicList{
+    position: absolute;
+    bottom: 95px;
+    left: 265px;
+    li{
+        float: left;
+        width: 172px;
+        height: 86px;
+        background: url(../img/nav_bg.png);
+        margin-right: 22px;
+        border-radius: 8px;
+        text-align: center;
+        color: #eee;
+        font-weight: bold;
+        cursor: pointer;
+        h2{
+            margin: 18px 0 6px;
+            line-height: 28px;
+        }
+        p{
+           font-size: 16px; 
+           line-height: 16px;
+           span{
+               margin-left: 4px;
+               font-size: 12px;
+           }
+        }
+    }
+}
+.musicControl{
+    width: 405px;
+    position: absolute;
+    top: 195px;
+    right: 160px;
+    .musicInfo{
+        color: #fff;
+        margin-bottom: 50px;
+        text-align: center;
+        h1{
+            font-size: 60px;
+            line-height: 60px;
+            margin-bottom: 22px;
+        }
+        h2{
+            font-size: 28px;
+            line-height: 28px;
+            span{
+                margin-left: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+    .control{
+        width: 100%;
+        height: 29px;
+        margin-bottom: 10px;
+        .left{
+            float: left;
+            padding: 4px 0;
+            span{
+                display: block;
+                float: left;
+                height: 21px;
+                width: 30px;
+                margin-right: 22px;
+                cursor: pointer;
+            }
+            span:nth-of-type(1){
+                background: url(../img/pre.png);
+            } 
+            span:nth-of-type(2){
+                width: 21px;
+                background-image: url(../img/pause.png);
+                background-size: 20px;
+            }
+            span:nth-of-type(3){
+                background: url(../img/next.png);
+            }      
+        }
+        .right{
+            float: right;
+            padding: 5px 0;
+            position: relative;
+            span{
+                display: block;
+                float: left;
+                height: 19px;
+                margin-right: 22px;
+                cursor: pointer;
+            }
+            span:nth-of-type(1){
+                width: 21px;
+                background: url(../img/sj.png);
+            } 
+            span:nth-of-type(2){
+                width: 19px;
+                background: url(../img/xh.png);
+            } 
+            span:nth-of-type(3){
+                width: 14px;
+                background-image: url(../img/sound.png);
+                background-size: 14px 19px;
+            } 
+            .changeSound{
+                width: 8px;
+                height: 100px;
+                position: absolute;
+                top: -106px;
+                left: 72%;
+                border-radius: 7px;
+                display: none;
+                background: #BCE8F1;
+                .cs{
+                    width: 100%;
+                    height: 80px;
+                    background: #fff;
+                    border-radius: 7px;
+                }
+                .yl{
+                    position: absolute;
+                    right: -24px;
+                    top: 6px;
+                    width: 20px;
+                    line-height: 18px;
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }   
+        }
+    }
+    .timer{
+        width: 100%;
+        height: 13px;
+        font-weight: bold;
+        .left{
+            float: left;
+            margin-right: 15px;
+            color: #eee;
+            font-size: 12px;
+            span{
+                padding-right: 5px;
+            }
+        }
+        .right{
+            float: left;
+            width: 300px;
+            height: 8px;
+            margin-top: 3px;
+            border-radius: 4px;
+            background: #666;
+            overflow: hidden;
+            .time{
+                width: 0;
+                height: 100%;
+                background: #fff;
+            }
+        }
+    }
+}

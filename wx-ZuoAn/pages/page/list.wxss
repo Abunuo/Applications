@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  height: 100%;
+  background: #eee; }
+  .container .banner {
+    width: 100%;
+    height: 180px;
+    position: relative; }
+    .container .banner .swiper {
+      width: 100%;
+      height: 100%; }
+    .container .banner .name {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      line-height: 30px;
+      text-indent: 1em;
+      font-size: 16px;
+      color: #000;
+      background: #ccc;
+      opacity: 0.5; }
+  .container .list-container {
+    width: 100%;
+    background: #eee; }
+    .container .list-container .title {
+      width: 100%;
+      line-height: 26px;
+      font-size: 16px;
+      text-indent: 1.5em;
+      color: #c89c17;
+      font-weight: bold;
+      letter-spacing: 2px; }
+    .container .list-container .list {
+      width: 100%;
+      height: 90px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      background: #fff;
+      margin-bottom: 4px; }
+      .container .list-container .list image {
+        width: 80px;
+        height: 80px;
+        margin: 5px 10px 0 5px; }
+      .container .list-container .list .info {
+        flex: 1;
+        margin: 5px 30px 0 5px; }
+        .container .list-container .list .info .goodName {
+          line-height: 24px;
+          font-size: 16px;
+          color: #333; }
+        .container .list-container .list .info .description {
+          font-size: 12px;
+          color: #999; }
+      .container .list-container .list .more {
+        height: 30px;
+        width: 20px;
+        position: absolute;
+        top: 35px;
+        right: 8px;
+        background: url(../../images/icon_screen.png) no-repeat;
+        background-position: -16px -137px;
+        opacity: 0.5; }

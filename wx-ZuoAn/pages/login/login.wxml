@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container" style="height:100%;">
+  <swiper wx:if="{{hidden}}" class="swiper" indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+	  <block wx:for="{{imgUrls}}">
+	    <swiper-item>
+			 	<image style="width:100%; height:100%;"  mode="scaleToFill"src="{{item}}" class="slide-image"></image>
+	    	<view bindtap="bindViewTap" class="login" wx:if="{{index == 2}}">点击进入</view> 
+	    </swiper-item>
+	  </block>
+	</swiper>
+
+	<view class="main" wx:if="{{!hidden}}">
+			<view class="main-container">
+				<view bindtap="bindViewTap" wx:for="{{navlist}}" wx:for-item="txt" wx:for-index="i" class="main-list {{(i+1)%3 == 0 ? 'noR' : ''}}">
+					<view class="op"></view>
+					<block  wx:for="{{navimgList}}" wx:for-item="img" wx:for-index="j">
+						<block wx:if="{{i == j}}" >
+							<view bindtap="bindLink" class="content"  data-index="{{link[i]}}">
+								<image style="width:27px;height:27px;" mode="scaleToFill"src="{{img}}" class="slide-image" ></image>
+								<b class="main-txt" >{{txt}}</b> 
+							</view>
+						</block>	  
+					</block>
+				</view>
+			</view>  		
+	</view>
+</view>

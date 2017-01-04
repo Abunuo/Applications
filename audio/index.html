@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐播放器</title>
+		<link rel="stylesheet" type="text/css" href="css/audio.css"/>
+		<script src="js/jquery-3.0.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/audio.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/EventUtilEx.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--< audio controls="controls"  >
+			<source src="" type="video/mpeg" >
+			<source src="" type="video/ogg" >
+			您的浏览器暂不支持audio标签。播放视频
+		</ audio>-->
+		<section class="container">
+			<section class="headImg"></section>
+			<section class="stick"></section>
+			<nav class="musicList">
+				<li>
+					<h2>丑八怪</h2>
+					<p>薛之谦<span>专辑:绅士</span></p>
+				</li>
+				<li>
+					<h2>绅士</h2>
+					<p>薛之谦<span>专辑:绅士</span></p>
+				</li>
+				<li>
+					<h2>一半</h2>
+					<p>薛之谦<span>专辑:绅士</span></p>
+				</li>
+				<li>
+					<h2>认真的雪</h2>
+					<p>薛之谦<span>专辑:未完成的歌</span></p>
+				</li>
+			</nav>
+			<section class="musicControl">
+				<header class="musicInfo">
+					<h1 class="musicName">丑八怪</h1>
+					<h2 class="musicAuthor">薛之谦<span class="musicType">专辑:绅士</span></h2>
+				</header>
+				<nav class="control">
+					<li class="left">
+						<span class="pre"></span>
+						<span class="pause"></span>
+						<span class="next"></span>
+					</li>
+					<li class="right">
+						<span class="sj"></span>
+						<span class="xh"></span>
+						<span class="sound"></span>
+						<div class="changeSound">
+							<div class="cs"></div>
+							<div class="yl">20</div>
+						</div>
+					</li>
+				</nav>
+				<footer class="timer">
+					<div class="left">
+						<span class="do">0.00</span>/
+						<span class="not">0.00</span>
+					</div>
+					<div class="right">
+						<div class="time"></div>
+					</div>
+				</footer>
+			</section>
+		</section>
+	</body>
+</html>

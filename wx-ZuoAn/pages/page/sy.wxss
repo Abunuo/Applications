@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  height: 100%; }
+  .container .listStyle {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column; }
+    .container .listStyle .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 16px;
+      color: #fff;
+      background: #c89c17;
+      line-height: 30px;
+      opacity: 0.8; }
+      .container .listStyle .nav .active {
+        color: lightgreen; }
+    .container .listStyle .swiper {
+      flex: 1; }
+      .container .listStyle .swiper swiper-item {
+        position: relative;
+        color: lightcoral; }
+        .container .listStyle .swiper swiper-item .info {
+          position: absolute;
+          top: 60%;
+          left: 0;
+          padding: 20px 30px;
+          font-size: 18px; }
+          .container .listStyle .swiper swiper-item .info .bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: #eee;
+            opacity: 0.2;
+            z-index: 0; }

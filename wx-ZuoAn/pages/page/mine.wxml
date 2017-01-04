@@ -1,0 +1,14 @@
+<view class="container">
+	<navigator class='quit' url='/pages/login/login'>退出</navigator>
+	<view  class="userinfo">
+	    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+	</view>
+	<view class="info">
+	    <text class="userinfo-nickname">昵称：{{userInfo.nickName}}</text>
+		<text>性别：{{userInfo.gender}}</text>
+		<text>个性签名：{{info}}</text>
+		<text>国家：{{userInfo.country}}</text>
+		<text>省份：{{userInfo.province}}</text>
+		<text>城市：{{userInfo.city}}</text>
+	</view>
+</view>

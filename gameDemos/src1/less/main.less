@@ -1,0 +1,100 @@
+@import 'variables.less';
+@import 'common.less';
+@import 'helper.less';
+@import 'progress.less';
+@import 'modal.less';
+@import 'game.less';
+@import 'game-detail.less';
+@import 'gift.less';
+@import 'mygames.less';
+
+#container {
+    padding-bottom: 153 * @usvw;
+    overflow-x: hidden;
+}
+
+footer.footer {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 153 * @usvw;
+    padding-top: 24 * @usvw;
+    padding-left: 109 * @usvw;
+    background: #fff;
+    border-top: 1px solid @color-border-sperator;
+    .menu {
+        float: left;
+        text-align: center;
+        font-size: 34 * @usvw;
+        margin-left: 207 * @usvw;
+        text-decoration: none;
+        color: #000;
+        .user-select;
+        &:first-child {
+            margin-left: 0;
+        }
+        .menu-icon {
+            .iconfont {
+                font-size: 55 * @usvw;
+            }
+        }
+        .menu-icon {
+            position: relative;
+            color: #000;
+            i {
+                display: none;
+                width: 21 * @usvw;
+                height:21 * @usvw;
+                background: #2697fc;
+                position: absolute;
+                border-radius: 50%;
+                z-index: 9;
+                font-style: normal;
+            }
+        }
+    }
+    .active{
+        color: #2697fc;
+        .menu-icon {
+            i {
+                display: block;
+            }
+        }
+    }
+    .youxi{
+        .menu-icon {
+            i {
+                top: 32%;
+                left: 69%;
+            }
+        }
+    }
+    .libao{
+        .menu-icon {
+            i {
+                top: 14%;
+                left: 64%;
+                z-index: -1;
+            }
+        }
+    }
+    .shequ{
+        .menu-icon {
+            i {
+                top: 31%;
+                left: 17%;
+                z-index: -1;
+            }
+        }
+    }
+    .geren{
+        .menu-icon {
+            i {
+                top: 12%;
+                left: 37%;
+                z-index: -1;
+            }
+        }
+    }
+}

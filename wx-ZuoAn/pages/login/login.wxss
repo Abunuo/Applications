@@ -1,0 +1,75 @@
+/**index.wxss**/
+.container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.swiper{
+	height: 100%;
+	width: 100%;
+}
+.login{
+	width: 180px;
+	height: 54px;
+	position: absolute;
+	bottom: 15%;
+	left: 26%;
+	border-radius: 96px;
+	opacity:0;
+}
+
+.main{
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/main.jpg);
+  background-size:cover; 
+}
+
+.main .main-container{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   position: relative;
+   top: 45%;
+   left: 10%;
+   width: 80%;
+   height: 50%;
+}
+
+.main .main-container .main-list{
+	width: 30%;
+	height: 30%;
+	margin:0 2% 2% 0;
+	position: relative;
+}
+.main .main-container .main-list .op{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+.main .main-container .main-list .content{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: #fff;
+	font-size: 10px;
+	z-index: 10;
+}
+.main .main-container .main-list image{
+	width: 27px;
+	height: 27px;
+	margin:20% 0 10% 35%;
+	display: block;
+}
+.main .main-container .noR{
+	margin-right: 0;
+}

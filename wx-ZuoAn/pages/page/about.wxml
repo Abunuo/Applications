@@ -1,0 +1,7 @@
+<view class="container">
+    <image src="/images/about.jpg" style="width:100%;height:100%;" mode="aspectFill"></image>
+     <view class="con">
+         <p>技术支持-Abunuo</p>
+         <a href="javascript:0">liangmingqing315@163.com</a>
+     </view>
+</view>

@@ -1,0 +1,21 @@
+{
+  "pages":[
+     "pages/login/login",
+     "pages/page/about",
+     "pages/page/idea",
+     "pages/page/list",
+     "pages/page/mine",
+     "pages/page/order",
+     "pages/page/shop",
+     "pages/page/shop1",
+     "pages/page/sy" ,
+     "pages/page/vip"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#c89c17",
+    "navigationBarTitleText": "左岸婚纱摄影",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh":"false"
+  }
+}

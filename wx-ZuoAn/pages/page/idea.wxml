@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="input">
+        <view class="txt">
+            <input placeholder="{{inputInfo}}" placeholder-style="color:#999;"/>
+        </view>
+        <view class="count">20</view>
+    </view>
+    <view class="con">
+        <view class="notice">您的联系方式:</view>
+        <input type="text" placeholder="手机号/QQ/邮箱" placeholder-style="color:#999;"/>
+    </view>
+    <button type="primary" style="background:darkorange;color:#fff;">提交</button>
+</view>

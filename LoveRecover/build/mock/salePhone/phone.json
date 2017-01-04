@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "img": "/build/images/salePhone/image.jpg",
+      "name": "苹果 iPhone 6",
+      "price":"3608"
+    },{
+      "img": "/build/images/salePhone/image_013.jpg",
+      "name": "苹果 iPhone 6S",
+      "price":"4482"
+    },{
+      "img": "/build/images/salePhone/image_006.jpg",
+      "name": "苹果 iPhone 5S",
+      "price":"1641"
+    },{
+      "img": "/build/images/salePhone/image_004.jpg",
+      "name": "苹果 iPhone 6 Plus",
+      "price":"4428"
+    },{
+      "img": "/build/images/salePhone/image_014.jpg",
+      "name": "苹果 iPhone 6S Plus",
+      "price":"5076"
+    },{
+      "img": "/build/images/salePhone/image_007.jpg",
+      "name": "三星 Galaxy Note 3",
+      "price":"820"
+    },{
+      "img": "/build/images/salePhone/image_009.jpg",
+      "name": "小米手机4",
+      "price":"814"
+    },{
+      "img": "/build/images/salePhone/image_005.jpg",
+      "name": "小米手机3",
+      "price":"360"
+    },{
+      "img": "/build/images/salePhone/image_008.jpg",
+      "name": "三星 Galaxy Note 2",
+      "price":"490"
+    },{
+      "img": "/build/images/salePhone/image_003.jpg",
+      "name": "华为 Mate 8",
+      "price":"3300"
+    }
+  ]
+}
